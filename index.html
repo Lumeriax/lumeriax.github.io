@@ -14,66 +14,69 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            background: linear-gradient(135deg, #f7f1e8, #ead9c5);
-            color: #3d3028;
+            background: linear-gradient(160deg, #f8f3ec, #e8d8c4);
+            color: #332820;
         }
 
-        .container {
+        .page {
             width: 100%;
-            max-width: 500px;
-            padding: 45px 25px;
+            max-width: 520px;
+            margin: auto;
+            padding: 45px 22px 30px;
             text-align: center;
         }
 
         .logo {
-            width: 95px;
-            height: 95px;
-            margin: 0 auto 18px;
+            width: 105px;
+            height: 105px;
+            margin: 0 auto 20px;
             border-radius: 50%;
-            background: white;
+            background: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: bold;
-            letter-spacing: 2px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            letter-spacing: 3px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
         }
 
         h1 {
-            font-size: 30px;
-            letter-spacing: 3px;
-            margin-bottom: 8px;
+            font-size: 31px;
+            letter-spacing: 5px;
+            margin-bottom: 9px;
         }
 
-        .description {
-            font-size: 15px;
-            margin-bottom: 30px;
-            opacity: 0.8;
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 32px;
+            opacity: 0.75;
         }
 
-        .button {
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link {
             display: block;
-            width: 100%;
-            padding: 17px 20px;
-            margin: 14px 0;
-            background: white;
-            color: #3d3028;
+            padding: 18px 20px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.94);
+            color: #332820;
             text-decoration: none;
-            border-radius: 14px;
             font-size: 16px;
             font-weight: bold;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.10);
-            transition: 0.25s;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.09);
+            transition: all 0.25s ease;
         }
 
-        .button:hover {
+        .link:hover {
             transform: translateY(-3px);
-            box-shadow: 0 9px 22px rgba(0,0,0,0.15);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.14);
         }
 
         .whatsapp {
@@ -81,14 +84,14 @@
             color: white;
         }
 
-        .social {
-            margin-top: 30px;
+        .socials {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 16px;
+            margin-top: 30px;
         }
 
-        .social a {
+        .social {
             width: 48px;
             height: 48px;
             border-radius: 50%;
@@ -97,26 +100,35 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            font-size: 21px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+            font-size: 20px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
             transition: 0.25s;
         }
 
-        .social a:hover {
+        .social:hover {
             transform: translateY(-3px);
         }
 
+        .coming-soon {
+            margin-top: 24px;
+            padding: 13px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.45);
+            font-size: 13px;
+            opacity: 0.75;
+        }
+
         footer {
-            margin-top: 35px;
+            margin-top: 30px;
             font-size: 12px;
-            opacity: 0.6;
+            opacity: 0.55;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="page">
 
         <div class="logo">
             LX
@@ -124,50 +136,69 @@
 
         <h1>LUMERIAX</h1>
 
-        <p class="description">
+        <p class="subtitle">
             Nutracéuticos & Belleza
         </p>
 
-        <a class="button whatsapp"
-           href="https://wa.me/message/FVAMZBAORRB7I1"
-           target="_blank">
-            💬 Escríbenos por WhatsApp
-        </a>
+        <div class="links">
 
-        <a class="button"
-           href="https://www.instagram.com/lumeriax7?igsi=M3Z1YXg3OXNvODhx"
-           target="_blank">
-            📸 Instagram
-        </a>
+            <a class="link whatsapp"
+               href="https://wa.me/message/FVAMZBAORRB7I1"
+               target="_blank">
+                💬 Escríbenos por WhatsApp
+            </a>
 
-        <a class="button"
-           href="https://www.tiktok.com/@lumeriax8?_r=1&_t=ZS-99GX568jI72"
-           target="_blank">
-            🎵 TikTok
-        </a>
+            <a class="link"
+               href="https://www.instagram.com/lumeriax7?igsi=M3Z1YXg3OXNvODhx"
+               target="_blank">
+                📸 Síguenos en Instagram
+            </a>
 
-        <a class="button"
-           href="https://www.facebook.com/profile.php?id=61593953364297"
-           target="_blank">
-            👍 Facebook
-        </a>
+            <a class="link"
+               href="https://www.tiktok.com/@lumeriax8?_r=1&_t=ZS-99GX568jI72"
+               target="_blank">
+                🎵 Síguenos en TikTok
+            </a>
 
-        <div class="social">
-            <a href="https://www.instagram.com/lumeriax7?igsi=M3Z1YXg3OXNvODhx"
-               target="_blank">📸</a>
+            <a class="link"
+               href="https://www.facebook.com/profile.php?id=61593953364297"
+               target="_blank">
+                👍 Síguenos en Facebook
+            </a>
 
-            <a href="https://www.tiktok.com/@lumeriax8?_r=1&_t=ZS-99GX568jI72"
-               target="_blank">🎵</a>
+        </div>
 
-            <a href="https://www.facebook.com/profile.php?id=61593953364297"
-               target="_blank">👍</a>
+        <div class="socials">
+
+            <a class="social"
+               href="https://www.instagram.com/lumeriax7?igsi=M3Z1YXg3OXNvODhx"
+               target="_blank">
+                📸
+            </a>
+
+            <a class="social"
+               href="https://www.tiktok.com/@lumeriax8?_r=1&_t=ZS-99GX568jI72"
+               target="_blank">
+                🎵
+            </a>
+
+            <a class="social"
+               href="https://www.facebook.com/profile.php?id=61593953364297"
+               target="_blank">
+                👍
+            </a>
+
+        </div>
+
+        <div class="coming-soon">
+            🛍️ Nuestra tienda online estará disponible próximamente
         </div>
 
         <footer>
             © 2026 Lumeriax · Todos los derechos reservados
         </footer>
 
-    </div>
+    </main>
 
 </body>
 </html>
